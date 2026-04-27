@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Shared top header (avatar + name + bell)
+            
             AppHeader(),
             SizedBox(height: 20),
 
@@ -239,7 +239,7 @@ class _TransactionItem extends StatelessWidget {
             child: Icon(icon, color: Colors.grey.shade600, size: 22),
           ),
           SizedBox(width: 12),
-          // Title + subtitle
+          
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -253,7 +253,7 @@ class _TransactionItem extends StatelessWidget {
               ],
             ),
           ),
-          // Amount — green for income, red for expense
+          
           Text(
             amount,
             style: TextStyle(

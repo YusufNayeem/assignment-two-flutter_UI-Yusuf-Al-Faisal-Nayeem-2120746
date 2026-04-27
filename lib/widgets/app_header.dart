@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-// ─────────────────────────────────────────────
-// SHARED APP HEADER
-// Used on all screens — shows avatar, name, and bell icon
-// ─────────────────────────────────────────────
+
 class AppHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -46,7 +43,7 @@ class AppHeader extends StatelessWidget {
           ],
         ),
 
-        // Right side: bell icon with red dot notification badge
+        
         Stack(
           children: [
             Container(
@@ -62,7 +59,7 @@ class AppHeader extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            // Red notification dot
+            
             Positioned(
               right: 6,
               top: 6,

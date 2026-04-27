@@ -28,10 +28,10 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  // Tracks which tab is active (0 = Home, 1 = Reports, 2 = Cards, 3 = Profile)
+  
   int _currentIndex = 0;
 
-  // All pages listed in order
+  
   final List<Widget> _pages = [
     HomeScreen(),
     ReportsPlaceholder(), // No design given for Reports
@@ -42,7 +42,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Shows the page matching the selected tab
+      
       body: _pages[_currentIndex],
 
       bottomNavigationBar: BottomNavigationBar(
@@ -51,7 +51,7 @@ class _MainScreenState extends State<MainScreen> {
         unselectedItemColor: Colors.grey,
         backgroundColor: Colors.white,
         type: BottomNavigationBarType.fixed,
-        // When a tab is tapped, update the index → switches the page
+        
         onTap: (index) {
           setState(() {
             _currentIndex = index;

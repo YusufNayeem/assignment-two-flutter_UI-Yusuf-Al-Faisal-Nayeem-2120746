@@ -100,7 +100,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  // Red note for students
+                  
                   Text(
                     '(Note: Students should replace the text above with their own description here!)',
                     style: TextStyle(
