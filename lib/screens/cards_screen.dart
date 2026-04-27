@@ -11,7 +11,7 @@ class CardsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Shared top header (avatar + name + bell)
+            
             AppHeader(),
             SizedBox(height: 20),
 
@@ -29,7 +29,7 @@ class CardsScreen extends StatelessWidget {
                 width: double.infinity,
                 height: 200,
                 fit: BoxFit.cover,
-                // Shows a loading spinner while the image is downloading
+                
                 loadingBuilder: (context, child, loadingProgress) {
                   if (loadingProgress == null) return child;
                   return Container(
@@ -46,7 +46,7 @@ class CardsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                // Shows an error box if image fails to load
+                
                 errorBuilder: (context, error, stackTrace) {
                   return Container(
                     width: double.infinity,
@@ -92,7 +92,7 @@ class CardsScreen extends StatelessWidget {
             ),
             SizedBox(height: 14),
 
-            // ── Linked Account Row ──
+            
             Container(
               padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
               decoration: BoxDecoration(
